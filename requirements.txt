@@ -2,10 +2,6 @@ fastapi
 uvicorn
 sqlalchemy
 pydantic
-<<<<<<< HEAD
-python-jose
-passlib
-=======
 passlib
 textblob
 nltk
@@ -17,4 +13,4 @@ pandas
 python-multipart
 fuzzywuzzy
 python-Levenshtein
->>>>>>> 8a99b5efafade8f81e0e2a501dd79446e59770e3
+python-jose
