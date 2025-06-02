@@ -14,3 +14,4 @@ pandas
 python-multipart
 fuzzywuzzy
 python-Levenshtein
+email-validator
