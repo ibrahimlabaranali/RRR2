@@ -1,0 +1,8 @@
+streamlit
+streamlit-folium
+folium
+requests
+pandas
+python-multipart
+fuzzywuzzy
+python-Levenshtein
