@@ -1,3 +1,3 @@
-# Road Freight Risk AI
-
-A FastAPI-based backend for risk reporting and analysis for road freight transport.
+bcrypt==4.0.1
+fastapi==0.110.0
+uvicorn==0.20.0

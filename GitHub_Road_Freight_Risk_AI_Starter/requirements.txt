@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+passlib
+textblob
+nltk
+streamlit
+streamlit-folium
+folium
+requests
+pandas
+python-multipart
+fuzzywuzzy
+python-Levenshtein
+python-jose
