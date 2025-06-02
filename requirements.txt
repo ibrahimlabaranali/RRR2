@@ -2,6 +2,7 @@ fastapi
 uvicorn
 sqlalchemy
 pydantic
+python-jose
 passlib
 textblob
 nltk
@@ -13,4 +14,3 @@ pandas
 python-multipart
 fuzzywuzzy
 python-Levenshtein
-python-jose
