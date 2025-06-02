@@ -1,0 +1,4 @@
+__pycache__/
+freight_risk.db
+*.pyc
+.env
