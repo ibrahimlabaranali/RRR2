@@ -15,8 +15,13 @@ __pycache__/
 .venv/
 venv/
 
+# 🧪 Python-related OS Caches
+*.db-journal
+*.sqlite3
+
 # 🚀 Streamlit and FastAPI cache/config
 instance/
+.streamlit/
 *.log
 
 # 🗂 OS and Editor Artifacts
@@ -25,7 +30,15 @@ Thumbs.db
 .vscode/
 .idea/
 
+# 📊 Jupyter Notebook (if used)
+.ipynb_checkpoints/
+
 # 🧪 Test Coverage and Reports (if using pytest or similar)
 htmlcov/
 coverage.xml
 .cache/
+
+# 📦 Packaging and Build
+dist/
+build/
+*.egg-info/
