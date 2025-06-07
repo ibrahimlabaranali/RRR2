@@ -6,3 +6,9 @@ pandas
 python-multipart
 fuzzywuzzy
 python-Levenshtein
+fastapi
+uvicorn
+sqlalchemy
+pydantic[email]
+python-jose
+passlib

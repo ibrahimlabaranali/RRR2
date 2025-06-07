@@ -49,15 +49,23 @@ class ReportResponse(BaseModel):
     user_id: int
     risk_type: str
     description: Optional[str]
-    location: Optional[str]
-    state: str
-    lga: str
-    lat: float
-    lon: float
-    timestamp: datetime
+    location: str
+    state: Optional[str]
+    lga: Optional[str]
+    lat: Optional[float]
+    lon: Optional[float]
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
 
     class Config:
         orm_mode = True
+
+    @staticmethod
+    def from_orm(obj):
+        data = super(ReportResponse, ReportResponse).from_orm(obj)
+        data.latitude = data.lat
+        data.longitude = data.lon
+        return data
 
 
 # ----------------------
