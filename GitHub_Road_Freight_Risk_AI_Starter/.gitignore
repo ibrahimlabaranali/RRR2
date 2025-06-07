@@ -16,7 +16,6 @@ __pycache__/
 venv/
 
 # 🚀 Streamlit and FastAPI cache/config
-.streamlit/
 instance/
 *.log
 
