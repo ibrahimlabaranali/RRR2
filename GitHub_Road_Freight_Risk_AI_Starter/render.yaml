@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: road-freight-risk-ai-frontend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run mobile/streamlit_app_mobile.py --server.port=8501 --server.address=0.0.0.0
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.10"
