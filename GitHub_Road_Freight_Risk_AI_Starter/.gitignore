@@ -1,4 +1,32 @@
-__pycache__/
-freight_risk.db
-*.pyc
+# 🚫 Database and Sensitive Data
+users.db
+reports.db
+admin_logs.txt
+
+# 🔐 Environment Variables
 .env
+*.env
+
+# ⚙️ Python Bytecode
+*.pyc
+__pycache__/
+
+# 🧪 Virtual Environments (local or virtualized)
+.venv/
+venv/
+
+# 🚀 Streamlit and FastAPI cache/config
+.streamlit/
+instance/
+*.log
+
+# 🗂 OS and Editor Artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 🧪 Test Coverage and Reports (if using pytest or similar)
+htmlcov/
+coverage.xml
+.cache/
