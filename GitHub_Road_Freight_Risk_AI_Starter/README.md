@@ -1,25 +1,13 @@
-# Road Freight Risk AI App
+# 🚚 Road Freight Risk AI System
 
-## 🌍 Overview
-This app helps Nigerian freight drivers and authorities classify, report, and respond to road-related travel risks such as banditry, protests, and flooding.
+## Features
+- Smart GPS & manual report submission
+- Real-time map with intelligent risk markers
+- CSV export for offline use
+- Secure FastAPI backend
+- Streamlit frontend UI
 
-## 📦 Modules
-- `backend/`: FastAPI backend
-- `frontend/streamlit/`: User and Admin dashboards
-- `mobile/`: React Native (Expo) starter
-
-## 🚀 Deployment
-### Backend (Render)
-1. Push to GitHub
-2. Create a new Render web service
-3. Use `uvicorn backend.main:app --host=0.0.0.0 --port=10000`
-
-### Frontend (Streamlit)
-1. Link GitHub repo
-2. Set main file to `user_dashboard.py`
-
-## 📱 Mobile App
-Built with React Native + Expo (see `mobile/`)
-
-## 📊 LGA Mapping
-Based on Nigeria’s 774 LGAs using `nigeria_lgas.json`
+## Deployment Instructions
+1. `pip install -r requirements.txt`
+2. Run backend: `uvicorn main:app --reload`
+3. Run frontend: `streamlit run frontend/streamlit/streamlit_app.py`
