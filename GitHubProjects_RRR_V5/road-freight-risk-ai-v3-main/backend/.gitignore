@@ -1,0 +1,19 @@
+# 🚫 Python cache and compiled files
+__pycache__/
+*.pyc
+
+# 🔐 Environment variables
+.env
+
+# 📦 Python environments
+.venv/
+venv/
+
+# ⚙️ Streamlit & VSCode configs
+.streamlit/
+.vscode/
+
+# 🧪 Logs and DBs
+*.log
+*.db
+*.sqlite3

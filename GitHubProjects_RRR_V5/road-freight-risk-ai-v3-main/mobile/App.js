@@ -1,0 +1,1 @@
+console.log('Mobile PWA Interface Ready');

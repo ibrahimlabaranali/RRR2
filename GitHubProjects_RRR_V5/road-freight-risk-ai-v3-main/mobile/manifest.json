@@ -1,0 +1,15 @@
+{
+    "name": "Road Freight Risk AI",
+    "short_name": "Risk AI",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0b5394",
+    "icons": [
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/2936/2936844.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

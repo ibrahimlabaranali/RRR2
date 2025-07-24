@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+
+# FastAPI Secrets
+.env
+.env.*
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Android Studio
+*.apk
+*.iml
+.idea/
+.gradle/
+build/
+output/
+local.properties
+
+# OS
+.DS_Store
+Thumbs.db
+
+venv

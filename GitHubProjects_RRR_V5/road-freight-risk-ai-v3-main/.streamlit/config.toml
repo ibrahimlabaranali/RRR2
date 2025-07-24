@@ -1,0 +1,30 @@
+[theme]
+primaryColor = "#0B5ED7"
+backgroundColor = "#F9F9F9"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#1B1B1B"
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 5
+fileWatcherType = "auto"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = false
+caching = true
+displayEnabled = true
+
+[runner]
+magicEnabled = false
+installTracer = false
+fixMatplotlib = true
+
+[logger]
+level = "info"
+messageFormat = "%(asctime)s %(message)s"
