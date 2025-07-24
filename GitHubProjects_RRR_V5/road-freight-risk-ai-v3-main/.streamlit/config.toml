@@ -1,0 +1,23 @@
+[global]
+developmentMode = false
+
+[server]
+maxUploadSize = 5
+fileWatcherType = "auto"
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = true
+
+[runner]
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+
+[logger]
+level = "info"
+messageFormat = "%(asctime)s %(message)s" 
