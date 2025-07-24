@@ -3,8 +3,6 @@ import requests
 import pandas as pd
 import os
 from dotenv import load_dotenv
-from streamlit_folium import st_folium
-import folium
 
 # 🌍 Load environment variables
 load_dotenv()
@@ -242,63 +240,6 @@ except requests.exceptions.RequestException:
     st.warning("🌐 Connection error.")
 except Exception as e:
     st.warning(f"⚠️ Error loading reports: {str(e)}")
-
-# 🗺️ Map View
-st.markdown("---")
-st.header("🗺️ Risk Map")
-
-try:
-    with st.spinner("🗺️ Loading map..."):
-        res = requests.get(f"{API_URL}/reports/all", timeout=10)
-    
-    if res.status_code == 200:
-        reports = res.json()
-        if reports:
-            # Create map centered on Nigeria
-            m = folium.Map(location=[9.0820, 8.6753], zoom_start=6)
-            
-            for report in reports:
-                try:
-                    # Extract coordinates from location (assuming format: "lat,lon")
-                    if ',' in str(report.get('location', '')):
-                        lat, lon = map(float, str(report['location']).split(',')[:2])
-                        
-                        # Color based on risk type
-                        colors = {
-                            'Robbery': 'red',
-                            'Kidnap': 'darkred',
-                            'Flooding': 'blue',
-                            'Protest': 'orange',
-                            'Road Block': 'yellow',
-                            'Other': 'gray'
-                        }
-                        color = colors.get(report['risk_type'], 'gray')
-                        
-                        folium.Marker(
-                            [lat, lon],
-                            popup=f"""
-                            <b>{report['risk_type']}</b><br>
-                            Location: {report['location']}<br>
-                            Reported by: {report['username']}<br>
-                            Time: {report.get('created_at', 'N/A')}
-                            """,
-                            icon=folium.Icon(color=color, icon='warning')
-                        ).add_to(m)
-                except:
-                    continue
-            
-            st_folium(m, use_container_width=True)
-        else:
-            st.info("🗺️ No reports to display on map.")
-    else:
-        st.warning("⚠️ Could not load map data.")
-        
-except requests.exceptions.Timeout:
-    st.warning("⏰ Map loading timeout.")
-except requests.exceptions.RequestException:
-    st.warning("🌐 Connection error.")
-except Exception as e:
-    st.warning(f"⚠️ Error loading map: {str(e)}")
 
 # 📱 Footer
 st.markdown("---")
