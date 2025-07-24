@@ -1,8 +1,0 @@
-streamlit
-pandas
-numpy
-requests
-python-dotenv
-streamlit-folium
-folium
-branca 
