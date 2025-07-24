@@ -1,23 +1,14 @@
-[global]
-developmentMode = false
-
 [server]
-maxUploadSize = 5
-fileWatcherType = "auto"
-enableCORS = true
-enableXsrfProtection = true
+headless = true
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
 
 [browser]
 gatherUsageStats = false
 
-[client]
-showErrorDetails = true
-
-[runner]
-magicEnabled = true
-installTracer = false
-fixMatplotlib = true
-
-[logger]
-level = "info"
-messageFormat = "%(asctime)s %(message)s" 
+[theme]
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730" 
