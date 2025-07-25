@@ -1,8 +1,20 @@
+# ✅ Core Streamlit App
 streamlit==1.35.0
-numpy==1.26.4
-pandas==2.2.2
-requests==2.31.0
-python-dotenv==1.0.1
-streamlit-folium==0.16.0
+
+# ✅ Mapping and Visualization
 folium==0.14.0
+streamlit-folium==0.16.0
 branca==0.6.0
+
+# ✅ Data Processing
+pandas==2.2.2
+numpy==1.26.4
+
+# ✅ Utilities
+requests==2.31.0
+urllib3==2.0.7
+python-dotenv==1.0.1
+streamlit-js-eval==0.1.5
+
+# ✅ Optional: Improve Pandas/Arrow performance in Streamlit
+pyarrow==14.0.2
