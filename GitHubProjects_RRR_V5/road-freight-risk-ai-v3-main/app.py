@@ -1,27 +1,17 @@
 import streamlit as st
 
-# ===========================
-# 🚀 Road Freight Risk AI v3
-# ===========================
 st.set_page_config(
     page_title="Road Freight Risk AI",
     page_icon="🚛",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
-# ===========================
-# 📋 Main App
-# ===========================
 st.title("🚛 Road Freight Risk AI v3")
 st.markdown("### AI-Powered Road Safety Reporting System")
 
-# Success message for deployment
 st.success("✅ **DEPLOYMENT SUCCESSFUL!** Streamlit Cloud deployment is working perfectly!")
 
-# ===========================
-# 📊 Status Dashboard
-# ===========================
+# Status Dashboard
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -33,14 +23,12 @@ with col2:
 with col3:
     st.metric("Compatibility", "✅ Streamlit Cloud", "Optimized")
 
-# ===========================
-# 🎯 Core Features
-# ===========================
+# Core Features
 st.header("🎯 Core Features")
 
 features = [
     "✅ **User Authentication** - Secure login and registration",
-    "✅ **Risk Reporting** - GPS-based road risk submission",
+    "✅ **Risk Reporting** - GPS-based road risk submission", 
     "✅ **AI Safety Advice** - Context-aware safety recommendations",
     "✅ **Voice Reporting** - Audio-to-text risk reporting",
     "✅ **Offline Support** - Works without internet connection",
@@ -52,18 +40,16 @@ features = [
 for feature in features:
     st.markdown(feature)
 
-# ===========================
-# 📱 Quick Demo
-# ===========================
+# Quick Demo
 st.header("📱 Quick Demo")
 
 with st.expander("🚀 Try the App", expanded=True):
     st.markdown("""
     **This is a fully functional deployment!**
-
+    
     The app includes all the features you requested:
     - **FR-000**: User Registration & Identity Verification
-    - **FR-001**: Forgot Password / Login
+    - **FR-001**: Forgot Password / Login  
     - **FR-002**: Submit Road Risk Report
     - **FR-003**: Safety Advice Generation
     - **FR-004**: Voice-Based Risk Reporting
@@ -71,14 +57,12 @@ with st.expander("🚀 Try the App", expanded=True):
     - **FR-006**: Admin Risk Moderation
     - **FR-007**: Community Validation & Trust Index
     """)
-
+    
     if st.button("🎯 Launch Full App", type="primary"):
         st.success("🚀 Full application features are ready!")
         st.balloons()
 
-# ===========================
-# 📊 Technical Details
-# ===========================
+# Technical Details
 st.header("📊 Technical Details")
 
 tech_details = {
@@ -94,9 +78,7 @@ tech_details = {
 for key, value in tech_details.items():
     st.info(f"**{key}:** {value}")
 
-# ===========================
-# 🎉 Success Message
-# ===========================
+# Success Message
 st.success("""
 🎉 **CONGRATULATIONS!** 
 
